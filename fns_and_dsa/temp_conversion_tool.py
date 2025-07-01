@@ -1,8 +1,8 @@
 # temp_conversion_tool.py
 
-# Global conversion factors
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+# Define global conversion factors
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 
 def convert_to_celsius(fahrenheit):
     return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
@@ -25,9 +25,9 @@ def main():
             print(f"{temperature}°F is {converted}°C")
         else:
             raise ValueError("Invalid unit. Please enter 'C' or 'F'.")
-    
-    except ValueError as e:
-        print(f"Invalid temperature. Please enter a numeric value.\n{e}")
+
+    except ValueError:
+        print("Invalid temperature. Please enter a numeric value.")
 
 if __name__ == "__main__":
     main()
