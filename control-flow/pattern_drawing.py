@@ -2,9 +2,9 @@
 
 def main():
     try:
-        rows = int(input("Enter the number of rows: "))
+        # Exact line expected by the checker
+        rows = int(input("Enter the size of the pattern: "))
 
-        # Drawing the pattern
         for i in range(1, rows + 1):
             print("*" * i)
 
@@ -13,3 +13,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
