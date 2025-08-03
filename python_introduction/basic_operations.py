@@ -1,5 +1,5 @@
-number1=10
-number2=5
+number1 = 10
+number2 = 5
 
 sum_results=number1+number2
 difference_results=number1-number2
